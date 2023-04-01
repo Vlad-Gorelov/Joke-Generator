@@ -13,6 +13,8 @@
 		8BD0DE4729D8973A00276902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD0DE4529D8973A00276902 /* Main.storyboard */; };
 		8BD0DE4929D8973C00276902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD0DE4829D8973C00276902 /* Assets.xcassets */; };
 		8BD0DE4C29D8973C00276902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD0DE4A29D8973C00276902 /* LaunchScreen.storyboard */; };
+		8BD0DE5629D89E7A00276902 /* Rostov.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BD0DE5529D89E7A00276902 /* Rostov.ttf */; };
+		8BD0DE5829D89FED00276902 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD0DE5729D89FED00276902 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8BD0DE4829D8973C00276902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BD0DE4B29D8973C00276902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BD0DE4D29D8973C00276902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD0DE5529D89E7A00276902 /* Rostov.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rostov.ttf; sourceTree = "<group>"; };
+		8BD0DE5729D89FED00276902 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		8BD0DE3E29D8973A00276902 /* Joke Generator */ = {
 			isa = PBXGroup;
 			children = (
+				8BD0DE5329D899DC00276902 /* Presentation */,
+				8BD0DE5929D89FF400276902 /* Helpers */,
+				8BD0DE5429D89E5C00276902 /* Resources */,
 				8BD0DE3F29D8973A00276902 /* AppDelegate.swift */,
 				8BD0DE4129D8973A00276902 /* SceneDelegate.swift */,
+			);
+			path = "Joke Generator";
+			sourceTree = "<group>";
+		};
+		8BD0DE5329D899DC00276902 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
 				8BD0DE4329D8973A00276902 /* ViewController.swift */,
 				8BD0DE4529D8973A00276902 /* Main.storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		8BD0DE5429D89E5C00276902 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				8BD0DE4829D8973C00276902 /* Assets.xcassets */,
 				8BD0DE4A29D8973C00276902 /* LaunchScreen.storyboard */,
 				8BD0DE4D29D8973C00276902 /* Info.plist */,
+				8BD0DE5529D89E7A00276902 /* Rostov.ttf */,
 			);
-			path = "Joke Generator";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BD0DE5929D89FF400276902 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8BD0DE5729D89FED00276902 /* UIColor+Extension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +158,7 @@
 				8BD0DE4C29D8973C00276902 /* LaunchScreen.storyboard in Resources */,
 				8BD0DE4929D8973C00276902 /* Assets.xcassets in Resources */,
 				8BD0DE4729D8973A00276902 /* Main.storyboard in Resources */,
+				8BD0DE5629D89E7A00276902 /* Rostov.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +172,7 @@
 				8BD0DE4429D8973A00276902 /* ViewController.swift in Sources */,
 				8BD0DE4029D8973A00276902 /* AppDelegate.swift in Sources */,
 				8BD0DE4229D8973A00276902 /* SceneDelegate.swift in Sources */,
+				8BD0DE5829D89FED00276902 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +321,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WFB452GXLK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Joke Generator/Info.plist";
+				INFOPLIST_FILE = "Joke Generator/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +351,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WFB452GXLK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Joke Generator/Info.plist";
+				INFOPLIST_FILE = "Joke Generator/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +368,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
