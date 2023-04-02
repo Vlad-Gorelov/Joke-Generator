@@ -2,10 +2,11 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -25,109 +26,67 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="n6L-Iy-FtT" userLabel="Main Stack View">
                                 <rect key="frame" x="32" y="64" width="350" height="768"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="wY5-fZ-27X" userLabel="JokeID Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="64"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MiT-BA-SU4">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="680"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="JokeID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="707-02-7zt" userLabel="JokeIDLabel">
-                                                <rect key="frame" x="0.0" y="0.0" width="279" height="64"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99I-Ie-PGR">
+                                                <rect key="frame" x="24" y="24" width="302" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDp-wS-MER" userLabel="JokeID">
-                                                <rect key="frame" x="311" y="0.0" width="39" height="64"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" name="JokeWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="64" id="sGl-6P-6vi"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="q7q-lB-nCe" userLabel="Type Stack View">
-                                        <rect key="frame" x="0.0" y="88" width="350" height="64"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5D-U6-rHL" userLabel="TypeLabel">
-                                                <rect key="frame" x="0.0" y="0.0" width="263.5" height="64"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="general" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofj-5o-gZb" userLabel="Type">
-                                                <rect key="frame" x="295.5" y="0.0" width="54.5" height="64"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" name="JokeWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="64" id="Ctv-R2-nZv"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8C5-UV-DXp" userLabel="JokeField Stack View">
-                                        <rect key="frame" x="0.0" y="176" width="350" height="504"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MiT-BA-SU4">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="504"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99I-Ie-PGR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wW7-ME-4c6">
-                                                        <rect key="frame" x="0.0" y="40.5" width="350" height="2"/>
-                                                        <color key="backgroundColor" name="JokeBlack"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="2" id="fxc-p6-wwc"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Почему iOS программист всегда голоден? Потому что он постоянно работает с Яблоками, но не может их съесть! 😁" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="1CP-dh-uUz">
-                                                        <rect key="frame" x="0.0" y="62.5" width="350" height="419.5"/>
-                                                        <fontDescription key="fontDescription" name="Rostov" family="Rostov" pointSize="27"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <size key="shadowOffset" width="0.0" height="0.0"/>
-                                                    </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd1-BW-kcW">
-                                                        <rect key="frame" x="0.0" y="502" width="350" height="2"/>
-                                                        <color key="backgroundColor" name="JokeBlack"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="2" id="u2T-ag-LQZ"/>
-                                                        </constraints>
-                                                    </view>
-                                                </subviews>
-                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wW7-ME-4c6">
+                                                <rect key="frame" x="24" y="63.5" width="302" height="2"/>
+                                                <color key="backgroundColor" name="JokeBlack"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="fxc-p6-wwc"/>
+                                                </constraints>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Waitin' for a joke..." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kl5-j8-scb">
+                                                <rect key="frame" x="24" y="85.5" width="302" height="570.5"/>
+                                                <color key="backgroundColor" red="0.85911852904040398" green="0.54127899989658457" blue="0.7108219320453304" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" name="Rostov" family="Rostov" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" name="JokePink"/>
+                                        <edgeInsets key="layoutMargins" top="24" left="24" bottom="24" right="24"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Dje-VA-KI9" userLabel="Buttons Stack View">
                                         <rect key="frame" x="0.0" y="704" width="350" height="64"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZ3-bm-b8w">
-                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="64" id="V5p-Pg-cho"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="Y4Z-Ds-hQf"/>
-                                                </constraints>
-                                                <color key="tintColor" name="JokeWhite"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" image="arrow.triangle.2.circlepath" catalog="system" cornerStyle="medium">
-                                                    <color key="baseForegroundColor" name="JokeBlack"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhK-QX-yjv">
-                                                <rect key="frame" x="80" y="0.0" width="270" height="64"/>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhK-QX-yjv">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="64"/>
                                                 <color key="tintColor" name="JokeButtonGreen"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Шутеичка" cornerStyle="medium">
+                                                <buttonConfiguration key="configuration" style="filled" title="GIVE ME A JOKE" imagePadding="9" cornerStyle="medium">
+                                                    <imageReference key="image" image="arrow.triangle.2.circlepath" catalog="system" symbolScale="large"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
                                                     <fontDescription key="titleFontDescription" name="Rostov" family="Rostov" pointSize="19"/>
                                                     <color key="baseForegroundColor" name="JokeBlack"/>
                                                 </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="giveMeAJoke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evR-3y-ukQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -149,6 +108,10 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="punchlineButton" destination="bhK-QX-yjv" id="Q6X-k4-9Cd"/>
+                        <outlet property="storyTextView" destination="kl5-j8-scb" id="62V-ZA-1LO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,8 +132,8 @@
         <namedColor name="JokePink">
             <color red="0.98039215686274506" green="0.5607843137254902" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="JokeWhite">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
