@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -20,30 +20,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Joke_Generator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="n6L-Iy-FtT" userLabel="Main Stack View">
-                                <rect key="frame" x="32" y="64" width="350" height="768"/>
+                                <rect key="frame" x="32" y="64" width="256" height="440"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MiT-BA-SU4">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="680"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="256" height="352"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99I-Ie-PGR">
-                                                <rect key="frame" x="24" y="24" width="302" height="19.5"/>
+                                                <rect key="frame" x="24" y="24" width="208" height="19.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wW7-ME-4c6">
-                                                <rect key="frame" x="24" y="63.5" width="302" height="2"/>
+                                                <rect key="frame" x="24" y="63.5" width="208" height="2"/>
                                                 <color key="backgroundColor" name="JokeBlack"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="fxc-p6-wwc"/>
                                                 </constraints>
                                             </view>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Waitin' for a joke..." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kl5-j8-scb">
-                                                <rect key="frame" x="24" y="85.5" width="302" height="570.5"/>
+                                                <rect key="frame" x="24" y="85.5" width="208" height="242.5"/>
                                                 <color key="backgroundColor" red="0.85911852904040398" green="0.54127899989658457" blue="0.7108219320453304" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" name="Rostov" family="Rostov" pointSize="22"/>
@@ -64,10 +64,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Dje-VA-KI9" userLabel="Buttons Stack View">
-                                        <rect key="frame" x="0.0" y="704" width="350" height="64"/>
+                                        <rect key="frame" x="0.0" y="376" width="256" height="64"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhK-QX-yjv">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="64"/>
                                                 <color key="tintColor" name="JokeButtonGreen"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="GIVE ME A JOKE" imagePadding="9" cornerStyle="medium">
