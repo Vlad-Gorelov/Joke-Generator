@@ -12,22 +12,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func giveMeAJoke(_ sender: Any) {
-        let apiUrl = URL(string: "https://official-joke-api.appspot.com/random_joke")!
-            URLSession.shared.dataTask(with: apiUrl) { data, response, error in
-                guard let data = data, error == nil else {
-                    print("Error fetching joke: \(error?.localizedDescription ?? "Unknown error")")
-                    return
-                }
-                do {
-                    let joke = try JSONDecoder().decode(Joke.self, from: data)
-                    DispatchQueue.main.async {
-                        self.storyTextView.text = joke.setup + "\n\n" + joke.punchline
-                    }
-                } catch {
-                    print("Error decoding joke: \(error.localizedDescription)")
-                }
-            }.resume()
-
+        getJoke()
 }
 
 
