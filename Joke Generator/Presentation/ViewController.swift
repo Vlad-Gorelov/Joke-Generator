@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  Joke Generator
-//
-//  Created by Владислав Горелов on 01.04.2023.
-//
 
 import UIKit
 import Foundation
